@@ -7,10 +7,9 @@
 /dataSources/
 /dataSources.local.xml
 /target
-.idea
+.idea/
 ### macOS ###
 .DS_Store
 target/
-.mvn
-mvnw
-mvnw.cmd
+
+

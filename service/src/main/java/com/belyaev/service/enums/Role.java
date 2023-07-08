@@ -1,4 +1,4 @@
-package com.belyaev.service.entity;
+package com.belyaev.service.enums;
 
 public enum Role {
     USER, ADMIN
