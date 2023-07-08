@@ -1,11 +1,13 @@
 package com.belyaev.service.entity;
 
+import com.belyaev.service.enums.Gender;
+import com.belyaev.service.enums.Genre;
+import com.belyaev.service.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -26,13 +28,20 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
     private String username;
-    @Column(name = "birth_date")
+
     private LocalDate birthDate;
-    private String gender;
+
+    @Enumerated(EnumType.STRING)
+    private Gender gender;
+
     private String email;
-    private String pass;
+
+    private String password;
+
     @Enumerated(EnumType.STRING)
     private Role role;
+
     private String image;
 }
