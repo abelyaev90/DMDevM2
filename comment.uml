@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.comment</OriginalElement>
+  <nodes>
+    <node x="30.0" y="289.0">a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.comment</node>
+    <node x="315.6" y="-219.0">a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.person</node>
+    <node x="562.1700000000001" y="52.0">a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.video_streaming_service</node>
+    <node x="559.85" y="311.0">a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film_video_streaming_service</node>
+    <node x="247.85000000000002" y="-25.0">a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film</node>
+    <node x="45.85000000000002" y="-3.0">a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.users</node>
+    <node x="212.85000000000002" y="322.5">a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.favorites_films</node>
+    <node x="392.85" y="311.0">a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film_person</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.comment" target="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film" relationship="REFERENCES">
+      <point x="36.25" y="-71.0" />
+      <point x="138.75" y="258.0" />
+      <point x="343.85" y="258.0" />
+      <point x="0.0" y="126.0" />
+    </edge>
+    <edge source="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film_person" target="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film" relationship="REFERENCES">
+      <point x="-36.75" y="-49.0" />
+      <point x="429.6" y="258.0" />
+      <point x="343.85" y="258.0" />
+      <point x="0.0" y="126.0" />
+    </edge>
+    <edge source="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.comment" target="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.users" relationship="REFERENCES">
+      <point x="-36.25" y="-71.0" />
+      <point x="66.25" y="268.0" />
+      <point x="136.85000000000002" y="268.0" />
+      <point x="0.0" y="104.0" />
+    </edge>
+    <edge source="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film_person" target="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.person" relationship="REFERENCES">
+      <point x="36.75" y="-49.0" />
+      <point x="503.1" y="248.0" />
+      <point x="479.58500000000004" y="248.0" />
+      <point x="479.58500000000004" y="-51.0" />
+      <point x="437.85" y="-51.0" />
+      <point x="40.75" y="71.0" />
+    </edge>
+    <edge source="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.favorites_films" target="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.users" relationship="REFERENCES">
+      <point x="-40.0" y="-37.5" />
+      <point x="252.85000000000002" y="268.0" />
+      <point x="136.85000000000002" y="268.0" />
+      <point x="0.0" y="104.0" />
+    </edge>
+    <edge source="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film_video_streaming_service" target="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.video_streaming_service" relationship="REFERENCES">
+      <point x="71.75" y="-49.0" />
+      <point x="775.1" y="268.0" />
+      <point x="684.1700000000001" y="268.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film" target="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.person" relationship="REFERENCES">
+      <point x="0.0" y="-126.0" />
+      <point x="343.85" y="-51.0" />
+      <point x="356.35" y="-51.0" />
+      <point x="-40.75" y="71.0" />
+    </edge>
+    <edge source="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.favorites_films" target="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film" relationship="REFERENCES">
+      <point x="40.0" y="-37.5" />
+      <point x="332.85" y="258.0" />
+      <point x="343.85" y="258.0" />
+      <point x="0.0" y="126.0" />
+    </edge>
+    <edge source="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film_video_streaming_service" target="a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film" relationship="REFERENCES">
+      <point x="-71.75" y="-49.0" />
+      <point x="631.6" y="258.0" />
+      <point x="343.85" y="258.0" />
+      <point x="0.0" y="126.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="425.0" y="199.0" />
+  <SelectedNodes>
+    <node>a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.person</node>
+    <node>a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.video_streaming_service</node>
+    <node>a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.comment</node>
+    <node>a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film_person</node>
+    <node>a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film_video_streaming_service</node>
+    <node>a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.users</node>
+    <node>a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.favorites_films</node>
+    <node>a5f9097c-fe43-4554-82c9-833d29a8b1e4.TABLE:postgres.public.film</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
